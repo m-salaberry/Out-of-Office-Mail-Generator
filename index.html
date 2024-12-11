@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--Box para elegir el tipo de mensaje que se desea generar-->
+            <div class="box1">
+                <h4>Type of message</h4>
+                <select id="tipoDeMensajeSelector" size="3">
+                    <option value="Annual leave">Annual leave</option>
+                    <option value="Holiday">Holiday</option>
+                    <option value="Out of office">Out of office</option>
+                </select>
+
+            </div>
+
+            <!--Box para seleccionar el país en caso de elegir la opcion Holiday-->
+            <div class="box2">
+                <h4>Country options</h4>
+                <select id="paisSelector" size="12" disabled>
+                    <option value="Arg">Argentina</option>
+                    <option value="Br">Brazil</option>
+                    <option value="Mex">Mexico</option>
+                    <option value="Rom">Romania</option>
+                    <option value="Ecu">Ecuador</option>
+                    <option value="Can">Canada</option>
+                    <option value="Usa">USA</option>
+                    <option value="Uru">Uruguay</option>
+                    <option value="Ch">Chile</option>
+                    <option value="Col">Colombia</option>
+                    <option value="Esp">España</option>
+                    <option value="Mar">Morocco</option>
+                </select>
+            </div>
+
+            <!--Boxes para determinar el período de tiempo en el que se está OOO y/o la fecha de returno directa-->
+            <div class="box3">
+                <h4>Returning Date</h4>
+                <select id="fechaSelector" class="fechaSelector" size="4">
+                    <option value="today">Today</option>
+                    <option value="this morning">This morning</option>
+                    <option value="this afternoon">This afternoon</option>
+                    <option value="until">Until</option>
+                </select>
+
+                <p></p>
+
+                <select name="day" id="day" class="day" disabled>
+                    <option value="" disabled selected>Select day</option>
+                    <option value=" Monday">Monday</option>
+                    <option value=" Tuesday">Tuesday</option>
+                    <option value=" Wednesday">Wednesday</option>
+                    <option value=" Thursday">Thursday</option>
+                    <option value=" Friday">Friday</option>
+                </select>
+
+                <div class="fechaReingreso">
+                    <div class="item"><select name="month" id="month" disabled>
+                            <option value="" disabled selected>Select month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select></div>
+
+                    <div class="item"><select name="dday" id="dday" disabled>
+                            <option value="" disabled selected>Select date</option>
+                            <option value=" 01">01</option>
+                            <option value=" 02">02</option>
+                            <option value=" 03">03</option>
+                            <option value=" 04">04</option>
+                            <option value=" 05">05</option>
+                            <option value=" 06">06</option>
+                            <option value=" 07">07</option>
+                            <option value=" 08">08</option>
+                            <option value=" 09">09</option>
+                            <option value=" 10">10</option>
+                            <option value=" 11">11</option>
+                            <option value=" 12">12</option>
+                            <option value=" 13">13</option>
+                            <option value=" 14">14</option>
+                            <option value=" 15">15</option>
+                            <option value=" 16">16</option>
+                            <option value=" 17">17</option>
+                            <option value=" 18">18</option>
+                            <option value=" 19">19</option>
+                            <option value=" 20">20</option>
+                            <option value=" 21">21</option>
+                            <option value=" 22">22</option>
+                            <option value=" 23">23</option>
+                            <option value=" 24">24</option>
+                            <option value=" 25">25</option>
+                            <option value=" 26">26</option>
+                            <option value=" 27">27</option>
+                            <option value=" 28">28</option>
+                            <option value=" 29">29</option>
+                            <option value=" 30">30</option>
+                            <option value=" 31">31</option>
+
+                        </select></div>
+
+                    <div class="item"><select name="year" id="year" disabled>
+                            <option value="" disabled selected>Select year</option>
+                            <option value=" 2024">2024</option>
+                            <option value=" 2025">2025</option>
+                            <option value=" 2026">2026</option>
+                            <option value=" 2027">2027</option>
+                            <option value=" 2028">2028</option>
+                        </select></div>
+                </div>
+            </div>
+
+            <!--Box para aclarar si vas a responder con demora o sin respuesta-->
+            <div class="box5">
+                <h4>Type of response</h4>
+                <select name="" class="response" id="response" size="2" disabled>
+                    <option value="Noresponse">Without response</option>
+                    <option value="Delay">With delay</option>
+                </select>
+            </div>
+
+            <!--Box para cargar a un responsable-->
+            <div class="box4">
+                <h4>Responsable person</h4>
+                <select id="personaSelector" size="6">
+                    <option value=" ">Nobody</option>
+                    <option
+                        value="<br>For urgent matter please reach my colleague / Para asuntos urgentes, comuníquese con mi colega / Para assuntos urgentes, entre em contato com meu colega: colleague@example.com">
+                        My Colleague</option>
+                    <option
+                        value="<br>For urgent matter please reach my teamleader / Para asuntos urgentes, comuníquese con mi líder de equipo / Para assuntos urgentes, entre em contato com o líder da minha equipe: teamleader@example.com">
+                        My Teamleader</option>
+                    <option
+                        value="<br>For urgent matter please reach my manager / Para asuntos urgentes, comuníquese con mi gerente / Para assuntos urgentes, entre em contato com meu gerente: manager@example.com">
+                        My Manager</option>
+                </select>
+
+
+            </div>
+
+            <!--Box para carga los datos del soporte técnico-->
+            <div class="box7">
+                <h4>Would you like to add technical support contacts?</h4>
+
+                <select name="yn" id="yn">
+                    <option value=" " disabled selected>Yes or No?</option>
+                    <option value="<br><br> For technical support please contact:
+                    <br><br> #### ### #### <08000000001> or +54 11 XXXXXXXX <+5411XXXXXXXX> - Argentina
+                    <br> #### ### #### <08000000001> or +55 11 XXXXXXXX <+5511XXXXXXXX> - Brazil
+                    <br> #### ### #### <08000000001> or +52 55 XXXXXXXX <+5255XXXXXXXX> - Mexico
+                    <br> #### ### #### <08000000001> or +57 1 XXXXXXX <+571XXXXXXX> - Colombia
+                    <br> #### ### #### <08000000001> or +1 XXXXXXXXXX <+1XXXXXXXXXX> - USA">Yes</option>
+                    <option value="">No</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <!--Box del boton-->
+        <div class="boton">
+            <button onclick="loadVars()">Generate & Copy message</button>
+        </div>
+
+        <!--Box donde se muestra el mensaje generado-->
+        <div class="box6">
+            <div class="example" id="example">
+                <p>Please select the above options to generate the mail message</p>
+            </div>
+            <p id="correo"> </p>
+
+
+
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

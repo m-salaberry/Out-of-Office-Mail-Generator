@@ -1,0 +1,97 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin-top: 2%;
+}
+.box1{
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.box2{
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.box3{
+    margin: auto;
+    margin-top: 60px;
+    text-align: center; 
+    width: 150px;
+}
+.fechaIngreso{
+    display: flex;
+}
+
+.item{
+    display: inline-block;
+    margin: auto;
+    margin-top: 5px;
+}
+.box4{
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.box6{
+    border: solid black 3px;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    padding: 5px;
+}
+.fechaSelector{
+    width: 150px;
+}
+.box1 select{
+    width: 150px;
+    border: solid black 1px;
+}
+.box2 select{
+    width: 150px;
+    border: solid black 1px;
+}
+.box4 select{
+    width: 150px;
+    border: solid black 1px;
+}
+.day{
+    width: 150px;
+}
+.boton{
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+.box1 .response{
+    margin-top: 10px;
+}
+.example{
+    text-align: center;
+    border: solid black 2px;
+    margin: -7px;
+    background-color:#33ccff;
+}
+.box5{
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+.box5 select{
+    width: 150px;
+}
+.box7{
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    width: 150px;
+}
+h4{
+    margin-top: 5px;
+    border: solid rgb(0, 0, 0) 1px;
+    background-color:#33ccff;
+}
+.box7 select{
+    width: 150px;
+}
